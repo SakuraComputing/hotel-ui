@@ -29,18 +29,26 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# On the Beach Frontend Software Engineer code test
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Produce a HTML, CSS and JavaScript representation of the given `design.png` with the following features:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Sort the results by price (this should be the default)
+- Sort the results by star rating and highlight when active
+- Sort the results alphabetically by hotel name and highlight when active
+- Ability to toggle expanded hotel description
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+We are looking for a client side solution, there should be no server logic involved.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Feel free to use JavaScript libraries or frameworks. Imagine this will be a component added to a large website.
 
-## Learn More
+You may use things like CSS Preprocessors and JavaScript build tools, but if you do please include the dependencies/source files.
+Feel free to source your own icons.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Things we like:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Semantic HTML
+- Modular CSS
+- Error/warning free JavaScript
+- Tests
+- Clean flow of state throughout the application

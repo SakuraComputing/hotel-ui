@@ -5,6 +5,5 @@ describe('/DashBoard', () => {
     it('should render the dashboard page', () => {
         render(<DashBoardPage />)
         expect(screen.getByText('Dashboard')).toBeInTheDocument();
-
     })
 })
