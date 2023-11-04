@@ -2,7 +2,7 @@ import { configureStore, Action } from '@reduxjs/toolkit';
 import { ThunkAction } from 'redux-thunk';
 import hotelsReducer from './hotelsReducer';
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
     hotels: hotelsReducer
   }
