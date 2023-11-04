@@ -8,7 +8,7 @@ interface IHotelProps {
 const HotelList: React.FC<IHotelProps> = ({hotels}) => {
 
     return (
-        <div>
+        <div className='hotel-list-container'>
             Hotel List
             {hotels.map((hotel, id) => <div key={id}>{hotel.name}</div>)}
         </div>

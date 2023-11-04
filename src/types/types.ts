@@ -10,7 +10,3 @@ export interface IHotel {
     price: number;
     overview: string;
 }
-
-export interface IHotels {
-    hotels: IHotel[];
-}
