@@ -1,4 +1,4 @@
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, findByText } from '@testing-library/react';
 import DashBoardPage from './Dashboard';
 import { Provider } from 'react-redux';
 import store from '../../app/store';
@@ -24,7 +24,7 @@ describe('/DashBoard', () => {
         expect(screen.getByText('7')).toBeInTheDocument();
         expect(screen.getByText('Airport')).toBeInTheDocument();
         expect(screen.getByText('1136')).toBeInTheDocument();
-        expect(screen.getByText('Nice Place')).toBeInTheDocument();
+        expect(screen.queryByText('Nice Place')).not.toBeInTheDocument();
     });
 
     it('should show the sort component', () => {
@@ -33,5 +33,14 @@ describe('/DashBoard', () => {
         expect(screen.getByText('sort alphabetically')).toBeInTheDocument();
         expect(screen.getByText('sort by price')).toBeInTheDocument();
         expect(screen.getByText('sort by star rating')).toBeInTheDocument();
+    });
+
+    it('should show the overview details when the view over icon is clicked', () => {
+        createTestable();
+
+        const showOverviewIcon = screen.getByTestId('overview-toggle');
+        fireEvent.click(showOverviewIcon);
+
+        expect(screen.getByText('Nice Place')).toBeInTheDocument();
     })
 })

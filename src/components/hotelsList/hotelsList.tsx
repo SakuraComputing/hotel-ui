@@ -10,7 +10,6 @@ const HotelList: React.FC<IHotelListProps> = ({hotels}) => {
 
     return (
         <div className='hotel-list-container'>
-            Hotel List
             {hotels.map((hotel, id) => <Hotel key={id} hotel={hotel} />)}
         </div>
     )
