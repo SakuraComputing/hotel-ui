@@ -18,7 +18,7 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
 
     return (
         <React.Fragment>
-            <aside className={isOverviewOpen ? 'hotel-container-expanded' : 'hotel-container'}>
+            <aside className={isOverviewOpen ? 'hotel-container--expanded' : 'hotel-container'}>
                 <div className={isOverviewOpen ? 'top-container-expanded' : 'top-container-not-expanded'}>
                     <div className='img-container'>
                         <div 
@@ -27,7 +27,7 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
                             onClick={onClickOverview} 
                             data-testid='overview-toggle'
                         >
-                            <span>{`Read ${toggleString} about this hotel`}</span>
+                            <span className='overview-toggle-text'>{`Read ${toggleString} about this hotel`}</span>
                             <img 
                                 src={`/img/chevron-${isOverviewOpen ? 'down' : 'up'}.png`} 
                                 alt={isOverviewOpen ? 'overview__open' : 'overview__closed'} 
@@ -45,7 +45,12 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
                         <div>{price}</div>            
                     </div>
                 </div>
-                {isOverviewOpen && <p className='overview'>{overview}</p>}            
+                {isOverviewOpen &&                 
+                    <div className='overview-container'>
+                        <div className='overview-title'>Overview</div>
+                        <p className='overview'>{overview}</p>
+                    </div>                    
+                }            
             </aside>
         </React.Fragment>
     )

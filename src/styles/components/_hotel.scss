@@ -1,15 +1,19 @@
-.hotel-container {
+.hotel-list-container {
     min-width: 33em;
+}
+
+.hotel-container {
+    width: 33em;
     height: 12em;
     background-color: $off-white;
     margin-bottom: 3em;
     display: flex;
     flex-direction: column;
-}
 
-.hotel-container-expanded {
-    @extend .hotel-container;
-    height: 18.5em;
+    &--expanded {
+        @extend .hotel-container;
+        height: 18.5em;    
+    }
 }
 
 .top-container-expanded {
@@ -42,17 +46,27 @@
     bottom: 0px;
 }
 
+.overview-toggle-text {
+    margin-left: 15px;
+}
+
 .details-container {
     margin-left: 15px
 }
 
-.overview-toggle span {
-    margin-left: 15px;
+.overview-container {
+    margin: 15px;
+}
+
+.overview-title {
+    font-weight: 600;
+    color: $dark-blue;
+    margin: 5px 0;
+    font-size: $font-size-small;
 }
 
 .overview {
     margin-top: 15px;
-    margin-left: 15px;
     font-size: $font-size-small;
 }
 

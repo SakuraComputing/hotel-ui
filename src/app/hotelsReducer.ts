@@ -1,20 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { IHotel } from '../types/types';
+import hotelData from '../data/hotels';
 
-const initialState: IHotel[] = [
-    {
-        id: 1,
-        name: 'Hotel Gotham',
-        resort: 'Tenerife',
-        rating: 5,
-        occupants: '2 Adults, 2 Children & 1 Infant',
-        date: '07/02/2019',
-        duration: 7,
-        departure: 'Airport',
-        price: 1136,
-        overview: 'Nice Place'
-    }
-];
+const initialState: IHotel[] = hotelData;
   
 export const hotelsSlice = createSlice({
     name: 'hotels',
