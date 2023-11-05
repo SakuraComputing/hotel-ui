@@ -25,7 +25,7 @@ describe('/DashBoard', () => {
         expect(screen.getByText('Tenerife')).toBeInTheDocument();
         expect(screen.getByText('5')).toBeInTheDocument();
         expect(screen.getByText('2 Adults, 2 Children & 1 Infant')).toBeInTheDocument();
-        expect(screen.getByText('01/01/08')).toBeInTheDocument();
+        expect(screen.getByText('3rd Jul 2019')).toBeInTheDocument();
         expect(screen.getByText('7')).toBeInTheDocument();
         expect(screen.getByText('Airport')).toBeInTheDocument();
         expect(screen.getByText('1136')).toBeInTheDocument();

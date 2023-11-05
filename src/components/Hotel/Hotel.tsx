@@ -1,5 +1,6 @@
 import React from 'react';
 import { IHotel } from '../../types/types';
+import { formatDate } from '../../helpers/utils';
 
 interface IHotelProps {
     hotel: IHotel
@@ -16,7 +17,7 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
                 <div>{resort}</div>
                 <div>{rating}</div>            
                 <div>{occupants}</div>  
-                <span><div>{date}</div><div>{duration}</div></span>                                  
+                <span><div>{formatDate(date)}</div><div>{duration}</div></span>                                  
                 <div>{departure}</div>            
                 <div>{price}</div>            
                 <p>{overview}</p>            

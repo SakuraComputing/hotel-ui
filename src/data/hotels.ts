@@ -6,7 +6,7 @@ export default [
         resort: 'Costa Adeje, Tenerife',
         rating: 5,
         occupants: '2 Adults, 2 Children & 1 Infant',
-        date: '03/07/19',
+        date: '03.07.19',
         duration: 7,
         departure: 'East Midlands',
         price: 1136.5,

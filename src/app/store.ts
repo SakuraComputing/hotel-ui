@@ -14,6 +14,4 @@ export type AppThunk = ThunkAction<void, RootState, null, Action<string>>;
 
 export const selectHotels = (state: RootState) => state.hotels;
 
-console.log('Store contents', selectHotels)
-
 export default store;

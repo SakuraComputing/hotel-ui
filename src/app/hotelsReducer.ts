@@ -8,7 +8,7 @@ const initialState: IHotel[] = [
         resort: 'Tenerife',
         rating: 5,
         occupants: '2 Adults, 2 Children & 1 Infant',
-        date: '01/01/08',
+        date: '07/02/2019',
         duration: 7,
         departure: 'Airport',
         price: 1136,
