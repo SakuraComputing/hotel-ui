@@ -1,8 +1,23 @@
 .hotel-container {
-    min-width: 35em;
-    min-height: 10em;
+    min-width: 33em;
+    height: 12em;
     background-color: $off-white;
     margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-container-expanded {
+    @extend .hotel-container;
+    height: 18.5em;
+}
+
+.top-container-expanded {
+    display: flex;
+    height: 12em;
+}
+
+.top-container-not-expanded {
     display: flex;
 }
 
@@ -10,6 +25,12 @@
     width: 66%;
     background-image: url('../../../assets/hotel-image-1.png');
     position: relative;
+    height: 12em;
+}
+
+.details-container {
+    font-size: $font-size-small;
+    margin-left: 15px;
 }
 
 .overview-toggle {
@@ -22,11 +43,17 @@
 }
 
 .details-container {
-    width: 33%
+    margin-left: 15px
 }
 
 .overview-toggle span {
     margin-left: 15px;
+}
+
+.overview {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: $font-size-small;
 }
 
 .icon {

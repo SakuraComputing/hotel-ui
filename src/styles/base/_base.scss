@@ -11,6 +11,11 @@ body {
     line-height: 1.6;
 }
 
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 button {
     cursor: pointer;
 }
