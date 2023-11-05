@@ -31,4 +31,12 @@ describe('/DashBoard', () => {
         expect(screen.getByText('1136')).toBeInTheDocument();
         expect(screen.getByText('Nice Place')).toBeInTheDocument();
     });
+
+    it('should show the sort component', () => {
+        createTestable();
+
+        expect(screen.getByText('sort alphabetically')).toBeInTheDocument();
+        expect(screen.getByText('sort by price')).toBeInTheDocument();
+        expect(screen.getByText('sort by star rating')).toBeInTheDocument();
+    })
 })
