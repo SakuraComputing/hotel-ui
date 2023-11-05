@@ -11,9 +11,8 @@ const Dashboard: React.FC = () => {
 
     return (
         <div className='dashboard'>
-            Dashboard
-            <HotelList hotels={hotels} />
             <Sort />
+            <HotelList hotels={hotels} />
         </div>
     );
     };

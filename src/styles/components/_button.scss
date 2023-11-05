@@ -1,0 +1,12 @@
+.button {
+    height: 100%;
+    width: 100%;
+    background-color: $off-white;
+    font-size: $font-size-small;
+    border-top-width: 1px;
+    border-color: $blue;
+    color: $blue;
+    :first-child {
+        border: none;
+    }
+}

@@ -1,0 +1,20 @@
+html {
+    margin: 0;
+    padding: 0;
+}  
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvitica, Arial, sans-serif;
+    font-size: $s-size;
+    line-height: 1.6;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
