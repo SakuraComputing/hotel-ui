@@ -23,16 +23,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 using React Testing library, testing the user experience as per RTL. So tests are on the Dashboard component
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 # On the Beach Frontend Software Engineer code test
 
 Produce a HTML, CSS and JavaScript representation of the given `design.png` with the following features:
@@ -56,6 +46,3 @@ Things we like:
 - Error/warning free JavaScript
 - Tests
 - Clean flow of state throughout the application
-
-Created using Create-React-App
-verion 18.2 of React

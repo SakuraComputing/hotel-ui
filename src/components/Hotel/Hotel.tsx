@@ -11,15 +11,16 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
 
     return (
         <React.Fragment>
-            <div>{name}</div>
-            <div>{resort}</div>
-            <div>{rating}</div>            
-            <div>{occupants}</div>            
-            <div>{date}</div>            
-            <div>{duration}</div>            
-            <div>{departure}</div>            
-            <div>{price}</div>            
-            <div>{overview}</div>            
+            <aside>
+                <div>{name}</div>
+                <div>{resort}</div>
+                <div>{rating}</div>            
+                <div>{occupants}</div>  
+                <span><div>{date}</div><div>{duration}</div></span>                                  
+                <div>{departure}</div>            
+                <div>{price}</div>            
+                <p>{overview}</p>            
+            </aside>
         </React.Fragment>
     )
 };

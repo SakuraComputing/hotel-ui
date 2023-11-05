@@ -14,6 +14,5 @@ const HotelList: React.FC<IHotelListProps> = ({hotels}) => {
             {hotels.map((hotel, id) => <Hotel key={id} hotel={hotel} />)}
         </div>
     )
-}  
-
+};  
 export default HotelList;
