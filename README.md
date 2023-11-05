@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+React version 18.2
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -18,6 +20,8 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+using React Testing library, testing the user experience as per RTL. So tests are on the Dashboard component
 
 ### `npm run build`
 
@@ -52,3 +56,6 @@ Things we like:
 - Error/warning free JavaScript
 - Tests
 - Clean flow of state throughout the application
+
+Created using Create-React-App
+verion 18.2 of React

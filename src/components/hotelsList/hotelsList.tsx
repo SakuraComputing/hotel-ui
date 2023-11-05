@@ -1,16 +1,17 @@
 import React from 'react';
 import { IHotel } from '../../types/types';
+import Hotel from '../Hotel/Hotel';
 
-interface IHotelProps {
+interface IHotelListProps {
     hotels: IHotel[];
 }
 
-const HotelList: React.FC<IHotelProps> = ({hotels}) => {
+const HotelList: React.FC<IHotelListProps> = ({hotels}) => {
 
     return (
         <div className='hotel-list-container'>
             Hotel List
-            {hotels.map((hotel, id) => <div key={id}>{hotel.name}</div>)}
+            {hotels.map((hotel, id) => <Hotel key={id} hotel={hotel} />)}
         </div>
     )
 }  
