@@ -1,4 +1,4 @@
 .dashboard {
-    background-color: #4179e8;
     min-height: 100vh;
+    background-image: url('../../../assets/background.png');
 }

@@ -3,6 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 React version 18.2
+React Redux Toolkit for state management
+React Testing Library for Tests
 
 ## Available Scripts
 
