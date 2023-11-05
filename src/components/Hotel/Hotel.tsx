@@ -8,7 +8,7 @@ interface IHotelProps {
 
 const Hotel: React.FC<IHotelProps> = ({hotel}) => {
 
-    const { name, resort, rating, occupants, date, duration, departure, price, overview } = hotel;
+    const { name, resort, rating, occupants, date, duration, departure, price, overview, id } = hotel;
 
     const  [ isOverviewOpen, setOverviewOpen ] = useState(false);
 
@@ -20,7 +20,7 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
         <React.Fragment>
             <aside className={isOverviewOpen ? 'hotel-container--expanded' : 'hotel-container'}>
                 <div className={isOverviewOpen ? 'top-container-expanded' : 'top-container-not-expanded'}>
-                    <div className='img-container'>
+                    <div className='img-container' style={{ backgroundImage: `url(/img/hotel-image-${id}.png)`}}>
                         <div 
                             className='overview-toggle' 
                             role='button' 
@@ -41,7 +41,7 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
                         <div>{rating}</div>            
                         <div>{occupants}</div>  
                         <span><div>{formatDate(date)}</div><div>{duration}</div></span>                                  
-                        <div>{departure}</div>            
+                        <div>Departing from {departure}</div>            
                         <div>{price}</div>            
                     </div>
                 </div>
