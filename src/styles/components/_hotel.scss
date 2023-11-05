@@ -8,10 +8,29 @@
 
 .img-container {
     width: 66%;
-    height: 100%;
     background-image: url('../../../assets/hotel-image-1.png');
+    position: relative;
+}
+
+.overview-toggle {
+    font-size: $font-size-small;
+    color: $dark-blue;
+    background-color: $off-white;
+    width: 15em;
+    position: absolute;
+    bottom: 0px;
 }
 
 .details-container {
     width: 33%
+}
+
+.overview-toggle span {
+    margin-left: 15px;
+}
+
+.icon {
+    width: 15px;
+    height:10px;
+    margin-left: 10px;
 }

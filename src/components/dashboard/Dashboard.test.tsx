@@ -24,6 +24,7 @@ describe('/DashBoard', () => {
         expect(screen.getByText('7')).toBeInTheDocument();
         expect(screen.getByText('Airport')).toBeInTheDocument();
         expect(screen.getByText('1136')).toBeInTheDocument();
+        expect(screen.getByText('Read more about this hotel')).toBeInTheDocument();
         expect(screen.queryByText('Nice Place')).not.toBeInTheDocument();
     });
 
@@ -42,5 +43,6 @@ describe('/DashBoard', () => {
         fireEvent.click(showOverviewIcon);
 
         expect(screen.getByText('Nice Place')).toBeInTheDocument();
+        expect(screen.getByText('Read less about this hotel')).toBeInTheDocument();
     })
 })

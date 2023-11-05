@@ -14,11 +14,25 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
 
     const onClickOverview = () => {setIsExpanded(!isExpanded)};
 
+    const toggleString = isExpanded ? 'less' : 'more';
+
     return (
         <React.Fragment>
             <aside className='hotel-container'>
                 <div className='img-container'>
-                    <div role='button' onClick={onClickOverview} data-testid='overview-toggle'>Read more about this hotel</div>
+                    <div 
+                        className='overview-toggle' 
+                        role='button' 
+                        onClick={onClickOverview} 
+                        data-testid='overview-toggle'
+                    >
+                        <span>{`Read ${toggleString} about this hotel`}</span>
+                        <img 
+                            src={`/img/chevron-${isExpanded ? 'up' : 'down'}.png`} 
+                            alt={isExpanded ? 'overview__open' : 'overview__closed'} 
+                            className='icon'
+                        />
+                    </div>
                 </div>
                 <div className='details-container'>
                     <div>{name}</div>
