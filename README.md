@@ -25,6 +25,10 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 using React Testing library, testing the user experience as per RTL. So tests are on the Dashboard component
 
+### Notes on testing
+
+I would use a mock store for testing in a real project not the actual store
+
 # On the Beach Frontend Software Engineer code test
 
 Produce a HTML, CSS and JavaScript representation of the given `design.png` with the following features:

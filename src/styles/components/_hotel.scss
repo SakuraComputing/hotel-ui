@@ -16,6 +16,16 @@
     }
 }
 
+.hotel-title {
+    font-size: $font-size-medium;
+    font-weight: 800;
+    color: $dark-blue;
+}
+
+.hotel-location {
+    color: $light-grey;
+}
+
 .top-container-expanded {
     display: flex;
     height: 12em;
@@ -34,6 +44,7 @@
 .details-container {
     font-size: $font-size-small;
     margin-left: 15px;
+    margin-top: 20px
 }
 
 .overview-toggle {

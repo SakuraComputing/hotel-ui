@@ -36,11 +36,11 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
                         </div>
                     </div>
                     <div className='details-container'>
-                        <div>{name}</div>
-                        <div>{resort}</div>
+                        <div className='hotel-title'>{name}</div>
+                        <div className='hotel-location'>{resort}</div>
                         <div>{rating}</div>            
                         <div>{occupants}</div>  
-                        <span><div>{formatDate(date)}</div><div>{duration}</div></span>                                  
+                        <span><div>{formatDate(date)}</div><div>for {duration} days</div></span>                                  
                         <div>Departing from {departure}</div>            
                         <div>{price}</div>            
                     </div>
