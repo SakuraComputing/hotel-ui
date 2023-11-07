@@ -9,12 +9,18 @@ interface IParams {
     onSelect: React.MouseEventHandler<HTMLButtonElement>;
 }
 
+export enum SortBy {
+    Alpha = 'alpha',
+    Price = 'price',
+    Rating = 'rating'
+}
+
 const Dashboard: React.FC = () => {
 
     const [ 
         selectedValue, 
         setSelectedValue, 
-    ] = useState(""); 
+    ] = useState(SortBy.Alpha); 
 
     const hotels = useSelector(sortHotelBy(selectedValue));
 
@@ -85,11 +91,11 @@ const Dashboard: React.FC = () => {
                         label="sort alphabetically"
                         selected={ 
                             selectedValue === 
-                            "alpha"
+                            SortBy.Alpha
                         } 
                         onSelect={() => 
                             setSelectedValue( 
-                                "alpha"
+                                SortBy.Alpha
                             ) 
                         } 
                     /> 
@@ -97,11 +103,11 @@ const Dashboard: React.FC = () => {
                         label="sort by price"
                         selected={ 
                             selectedValue === 
-                            "price"
+                            SortBy.Price
                         } 
                         onSelect={() => 
                             setSelectedValue( 
-                                "price"
+                                SortBy.Price
                             ) 
                         } 
                     /> 
@@ -109,11 +115,11 @@ const Dashboard: React.FC = () => {
                         label="sort by star rating"
                         selected={ 
                             selectedValue === 
-                            "rating"
+                            SortBy.Rating
                         } 
                         onSelect={() => 
                             setSelectedValue( 
-                                "rating"
+                                SortBy.Rating
                             ) 
                         } 
                     /> 
