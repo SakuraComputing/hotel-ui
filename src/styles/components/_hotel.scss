@@ -24,6 +24,7 @@
 
 .hotel-location {
     color: $light-grey;
+    font-size: $font-size-small;
 }
 
 .top-container-expanded {
@@ -44,7 +45,8 @@
 .details-container {
     font-size: $font-size-small;
     margin-left: 15px;
-    margin-top: 20px
+    margin-top: 20px;
+    width: 30%;
 }
 
 .overview-toggle {
@@ -61,7 +63,8 @@
 }
 
 .details-container {
-    margin-left: 15px
+    margin-left: 15px;
+    font-size: $font-size-x-small;
 }
 
 .overview-container {
@@ -84,4 +87,8 @@
     width: 15px;
     height:10px;
     margin-left: 10px;
+}
+
+.departure {
+    padding-bottom: 1.5em;
 }

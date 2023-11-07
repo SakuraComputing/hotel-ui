@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IHotel } from '../../types/types';
-import { formatDate } from '../../helpers/utils';
+import { currencyFormat, formatDate } from '../../helpers/utils';
+import Button from '../common/Button';
 
 interface IHotelProps {
     hotel: IHotel
@@ -17,7 +18,7 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
     const toggleString = isOverviewOpen ? 'less' : 'more';
 
     return (
-        <React.Fragment>
+        <div>
             <aside className={isOverviewOpen ? 'hotel-container--expanded' : 'hotel-container'}>
                 <div className={isOverviewOpen ? 'top-container-expanded' : 'top-container-not-expanded'}>
                     <div className='img-container' style={{ backgroundImage: `url(/img/hotel-image-${id}.png)`}}>
@@ -36,13 +37,21 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
                         </div>
                     </div>
                     <div className='details-container'>
-                        <div className='hotel-title'>{name}</div>
+                        <header className='hotel-title'>{name}</header>
                         <div className='hotel-location'>{resort}</div>
                         <div>{rating}</div>            
                         <div>{occupants}</div>  
-                        <span><div>{formatDate(date)}</div><div>for {duration} days</div></span>                                  
-                        <div>Departing from {departure}</div>            
-                        <div>{price}</div>            
+                        <span><strong>{formatDate(date)}</strong> for <strong>{duration}</strong> days</span>                                  
+                        <div className='departure'>departing from <strong>{departure}</strong></div>       
+                        <Button
+                            border='none'
+                            color='#F5E12B'
+                            height='60px'
+                            onClick={() => alert('Booking Now')}
+                            radius='5%'
+                            width='100%'
+                            children={<div><div><small className='header'>Book Now</small></div><strong className='price'>{currencyFormat(price)}</strong></div>}
+                        />                 
                     </div>
                 </div>
                 {isOverviewOpen &&                 
@@ -52,7 +61,7 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
                     </div>                    
                 }            
             </aside>
-        </React.Fragment>
+        </div>
     )
 };
 export default Hotel;

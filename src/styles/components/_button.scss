@@ -1,12 +1,10 @@
-.button {
-    height: 100%;
-    width: 100%;
-    background-color: $off-white;
-    font-size: $font-size-small;
-    border-top-width: 1px;
-    border-color: $blue;
-    color: $blue;
-    :first-child {
-        border: none;
-    }
+.price {
+    font-size: $font-size-large;
+    color: $dark-blue;
+}
+
+.header {
+    color: $dark-blue;
+    padding-bottom: 3px;
+    font-weight: 700;
 }
