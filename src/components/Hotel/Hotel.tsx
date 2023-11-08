@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IHotel } from '../../types/types';
 import { currencyFormat, formatDate } from '../../helpers/utils';
 import Button from '../common/Button';
+import { Rating } from 'react-simple-star-rating';
 
 interface IHotelProps {
     hotel: IHotel
@@ -39,8 +40,8 @@ const Hotel: React.FC<IHotelProps> = ({hotel}) => {
                     <div className='details-container'>
                         <header className='hotel-title'>{name}</header>
                         <div className='hotel-location'>{resort}</div>
-                        <div>{rating}</div>            
-                        <div>{occupants}</div>  
+                        <Rating initialValue={rating} readonly={true} size={18} fillColor='#F5E12B'/>         
+                        <div className='occupants'>{occupants}</div>  
                         <span><strong>{formatDate(date)}</strong> for <strong>{duration}</strong> days</span>                                  
                         <div className='departure'>departing from <strong>{departure}</strong></div>       
                         <Button

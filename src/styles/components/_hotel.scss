@@ -25,6 +25,7 @@
 .hotel-location {
     color: $light-grey;
     font-size: $font-size-small;
+    padding-bottom: 6px;
 }
 
 .top-container-expanded {
@@ -89,6 +90,10 @@
     margin-left: 10px;
 }
 
+.occupants {
+    padding-top: 3px;
+}
+
 .departure {
-    padding-bottom: 1.5em;
+    padding-bottom: 1.8em;
 }

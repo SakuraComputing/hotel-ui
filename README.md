@@ -52,3 +52,14 @@ Things we like:
 - Error/warning free JavaScript
 - Tests
 - Clean flow of state throughout the application
+
+## Oustanding Problems
+
+Re-rendering - useSelector needs to be memoized somehow
+Tests not sufficient
+Fonts and Colours need more time on them
+SASS/CSS needs refactoring
+Rating needs empty stars removing
+Button text color too light
+Read more about the hotel chevron needs sorting
+Occupants numbers not in bold
