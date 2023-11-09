@@ -1,0 +1,99 @@
+.hotel-list-container {
+    min-width: 33em;
+}
+
+.hotel-container {
+    width: 33em;
+    height: 12em;
+    background-color: $off-white;
+    margin-bottom: 1.25em;
+    display: flex;
+    flex-direction: column;
+
+    &--expanded {
+        @extend .hotel-container;
+        height: 18.5em;    
+    }
+}
+
+.hotel-title {
+    font-size: $font-size-medium;
+    font-weight: 800;
+    color: $dark-blue;
+}
+
+.hotel-location {
+    color: $light-grey;
+    font-size: $font-size-small;
+    padding-bottom: 6px;
+}
+
+.top-container-expanded {
+    display: flex;
+    height: 12em;
+}
+
+.top-container-not-expanded {
+    display: flex;
+}
+
+.img-container {
+    width: 66%;
+    position: relative;
+    height: 12em;
+}
+
+.details-container {
+    font-size: $font-size-small;
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.overview-toggle {
+    font-size: $font-size-small;
+    color: $dark-blue;
+    background-color: $off-white;
+    width: 15em;
+    position: absolute;
+    bottom: 0px;
+}
+
+.overview-toggle-text {
+    margin-left: 15px;
+}
+
+.details-container {
+    margin-left: 15px;
+    font-size: $font-size-x-small;
+}
+
+.overview-container {
+    margin: 15px;
+}
+
+.overview-title {
+    font-weight: 600;
+    color: $dark-blue;
+    margin: 5px 0;
+    font-size: $font-size-small;
+}
+
+.overview {
+    margin-top: 15px;
+    font-size: $font-size-small;
+}
+
+.icon {
+    width: 15px;
+    height:10px;
+    margin-left: 10px;
+}
+
+.occupants {
+    padding-top: 3px;
+}
+
+.departure {
+    padding-bottom: 1.8em;
+}
