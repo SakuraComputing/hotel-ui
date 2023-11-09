@@ -3,6 +3,14 @@
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Build Notes
+
+React 18
+Typescript
+Redux Dev Tools
+
+I have done everything by rule of thumb styling wise, I would expect the design team to give exact designs down to pixel level, colours and assets.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -13,10 +21,10 @@ using React Testing library, testing the user experience as per RTL. So tests ar
 
 I would use a mock store for testing in a real project not the actual store. There are no where near enough tests but I have spent a lot of time on this.
 
-## Oustanding Problems
+## Further improvemments
 
 //Functional
-Re-rendering - useSelector needs to be memoized somehow
+Re-rendering - useSelector needs to be memoized
 Tests not sufficient
 
 // Styling
@@ -26,8 +34,4 @@ Button text color too light
 Read more about the hotel chevron needs sorting
 Occupants numbers not in bold
 Nothing in for responsiveness or mobile
-
-## Notes
-
-I have done everything by rule of thumb styling wise, I would expect the design team to give exact designs down to pixel level, colours and assets.
-It has been enjoyable doing this
+Sorting not bi-directional
