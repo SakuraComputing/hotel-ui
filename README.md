@@ -10,7 +10,9 @@ Redux Dev Tools
 
 ## Installation
 
-**npm install**
+### `npm install`
+
+Builds the project
 
 ## Start
 
